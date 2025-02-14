@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4 – Exercise 1</title>
+</head>
+<body>
+    <h1>JavaScript Lab</h1>
+    <script>
+        // Write your JavaScript code here
+        
+        // Variable Declaration:
+        // 1.)
+        let variableLet = 10;
+        const variableConst = 20;
+
+        // 2.)
+        variableLet = 15;
+        console.log(variableLet); 
+        
+        // 3.)
+        //variableConst = 25; 
+        //console.log(variableConst);
+        
+        // 4.)
+        // Error: Uncaught TypeError TypeError: Assignment to constant variable.
+
+       
+        // String Operations:
+        // 1.)
+        let string1 = "Hello, World!";
+        let string2 = "JavaScript is fun!";
+        
+        // 2.)
+        console.log(string1.length);
+        
+        // 3.)
+        let combinedString = string1.concat(string2);
+        console.log(combinedString);
+
+        // 4.)
+        string2replaced = string2.replace("fun", "awesome");
+        console.log(string2replaced); 
+
+
+        // String Templates:
+        // 1.)
+        let name = "Alice";
+        let age = 25;
+
+        // 2.)
+        let alicestring = `My name is ${name} and I am ${age} years old`;
+        
+        // 3.)
+        console.log(alicestring);
+
+
+        // Working with Dates:
+        // 1.)
+        let currentDate = new Date();
+
+        // 2.)
+        console.log(currentDate);
+
+        // 3.)
+        console.log(currentDate.getFullYear()); 
+        console.log(currentDate.getMonth() + 1); 
+        console.log(currentDate.getDay()); 
+        let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        console.log(weekdays[currentDate.getDay()]); 
+
+    </script>
+</body>
+</html>
