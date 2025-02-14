@@ -23,8 +23,38 @@
 
         console.log(classRoster.length);
 
-        
         // Objects with Nested Structures:
+        let classInfo = {
+            className: 'ENSF381: Full-Stack Web Development',
+            instructor: 'Dr. Smith',
+            students: classRoster,
+            details: {semester: 'Winter', year: 2025}
+        }
+
+        classInfo.schedule = ["Monday", "Wednesday", "Friday"];
+
+        classInfo.instructor = 'Dr. Deb';
+
+        console.log('Class Name:', classInfo.className);
+        console.log('Instructor:', classInfo.instructor);
+        console.log('Students:', classInfo.students);
+
+        console.log('Semester:', classInfo.details.semester);
+        console.log('Updated classInfo:', classInfo);
+
+        let {className, students} = classInfo;
+        console.log('Class Name:', className);
+        console.log('Students:', students);
+
+        let {details: {semester, year} } = classInfo;
+        console.log('Semester:', semester);
+        console.log('Year:', year);
+
+        let [student1, student2, ...remainingStudents] = classRoster;
+        console.log('Student 1:', student1);
+        console.log('Student 2:', student2);
+        console.log('Remaining Students:', remainingStudents);
+
     </script>
 </body>
 </html>
